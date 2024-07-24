@@ -17,7 +17,7 @@ pipeline {
             }
         stage('deployment') {
             steps {
-                deploy adapters: [tomcat10(url: 'https://8d04-54-36-174-39.ngrok-free.app/',
+                deploy adapters: [tomcat9(url: 'https://8d04-54-36-174-39.ngrok-free.app/',
                 credentialsID: 'TomcatCreds')],
                 war: 'target/*.war',
                 contextPath: 'app'
