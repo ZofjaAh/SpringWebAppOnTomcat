@@ -22,12 +22,11 @@ pipeline {
                 contextPath: 'app'
             }
         }
-        stage('Notification')
-        steps{
-        emailext(
-        subject: "Job Completed",
-        body: "Jenkins pipeline job for maven build job completed",
-        to: "zozolulu1894@gmail.com"
+        stage ('Notification'){
+            emailext(
+                subject: "Job Completed",
+                body: "Jenkins pipeline job for maven build job completed",
+                to: "zozolulu1894@gmail.com"
         )
         }
     }
