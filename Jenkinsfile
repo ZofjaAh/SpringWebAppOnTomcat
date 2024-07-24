@@ -16,13 +16,13 @@ pipeline {
             rtGradle.resolver repo:'remote-repos', server: server
         }
         stage('Build') {
-            buildInfo = rtGradle.run
-            rootDir: "gradle-examples/4/gradle-example-ci-server/", buildFile: 'build.gradle', tasks: 'clean artifactoryPublish'
-              }
+            if (isUnix()) {
+                    sh './gradlew clean build'
+                } else {
+                    bat 'gradlew.bat clean build'
+                }
         }
-        stage('Publish build info') {
-                server.publishBuildInfo buildInfo
-            }
+
 
         stage('deployment') {
             steps {
