@@ -28,7 +28,9 @@ dependencies {
 	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0'
 
 }
-
+war{
+	archiveFileName = 'simple-web-app.war'
+}
 tasks.named('test') {
 	useJUnitPlatform()
 }
