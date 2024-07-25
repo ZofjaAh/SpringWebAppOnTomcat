@@ -1,5 +1,6 @@
 package com.aston.simple_web_app;
 
+
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 

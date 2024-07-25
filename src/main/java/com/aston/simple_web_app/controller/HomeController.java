@@ -1,5 +1,6 @@
 package com.aston.simple_web_app.controller;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
