@@ -1,6 +1,6 @@
 <html>
     <head></head>
     <body>
-        <h1>Welcome to Java</h1>
+        <h1>Welcome to For Everybody</h1>
     </body>
 </html>
